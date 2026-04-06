@@ -25,3 +25,32 @@ void Board::StorePiece(int pX, int pY, int pPiece, int pRotation) {
         }
     }
 }
+
+bool Board::IsGameOver() {
+    for (int i = 0; i < BOARD_WIDTH; ++i) {
+        return (mBoard[i][0] == POS_FILLED);
+    }
+}
+
+void Board::DeleteLine(int pY) {
+    for (int j = pY; j > 0; --j) {
+        for (int i = 0; i < BOARD_WIDTH; ++i) {
+            mBoard[i][j] = mBoard[i][j-1];
+        }
+    }
+}
+
+void Board::DeletePossibleLines() {
+    for (int j = 0; j < BOARD_HEIGHT; ++j) {
+        int i = 0;
+        while (i < BOARD_WIDTH) {
+            if (mBoard[i][j] != POS_FILLED) break;
+            i++;
+        }
+        if (i == BOARD_WIDTH) DeleteLine(j);
+    }
+}
+
+bool Board::IsFreeBlock(int pX, int pY) {
+    return mBoard[pX][pY] == POS_FREE;
+}
