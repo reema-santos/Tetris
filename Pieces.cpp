@@ -328,6 +328,6 @@ int GetXInitialPosition (int pPiece, int pRotation) {
     return mPiecesInitialPosition[pPiece][pRotation][0];
 } 
 
-int GetXInitialPosition (int pPiece, int pRotation) {
+int GetYInitialPosition (int pPiece, int pRotation) {
     return mPiecesInitialPosition[pPiece][pRotation][1];
 } 
