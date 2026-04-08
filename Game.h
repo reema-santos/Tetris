@@ -11,8 +11,10 @@
 class Game {
     public:
         Game(Board* pBoard, Pieces* pPieces, IO* pIO, int pScreenHeight);
+        
         void DrawScene();
         void CreateNewPiece();
+        
         int mPosX, mPosY;
         int mPiece, mRotation;
 
@@ -20,9 +22,11 @@ class Game {
         int mScreenHeight;
         int mNextPosX, mNextPosY;
         int mNextPiece, mNextRotation;
+
         Board* mBoard;
         Pieces* mPieces;
         IO* mIO;
+
         int GetRand(int pA, int pB);
         void InitGame();
         void DrawPiece(int pX, int pY, int pPiece, int pRotation);
