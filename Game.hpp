@@ -1,9 +1,9 @@
 #ifndef _GAME_
 #define _GAME_
 
-#include "Board.h"
-#include "Pieces.h"
-#include "IO.h"
+#include "Board.hpp"
+#include "Pieces.hpp"
+#include "IO.hpp"
 #include <time.h>
 
 #define WAIT_TIME 700 // Number of milliseconds that the piece remains before going 1 block down
