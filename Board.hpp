@@ -1,7 +1,7 @@
 #ifndef _BOARD_
 #define _BOARD_
 
-#include "Pieces.h"
+#include "Pieces.hpp"
 
 #define BOARD_LINE_WIDTH 6 // Width of delimiters to board
 #define BLOCK_SIZE 16 // Width and height of a block

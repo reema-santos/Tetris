@@ -1,4 +1,4 @@
-#include "Board.h"
+#include "Board.hpp"
 
 Board::Board(Pieces* pPieces, int pScreenHeight) {
     mPieces = pPieces;
