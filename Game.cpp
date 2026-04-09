@@ -1,5 +1,5 @@
-#include "Game.h"
-#include "IO.h"
+#include "Game.hpp"
+#include "IO.hpp"
 #include <cassert>
 
 int Game::GetRand(int pA, int pB) {
