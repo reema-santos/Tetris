@@ -1,7 +1,7 @@
 #ifndef _IO_
 #define _IO_
 
-#ifndef LINUX
+#ifndef WINDOWS
 #include "SDL/include/SDL.h"
 #include "SDL/SDL_GfxPrimitives/SDL_gfxPrimitives.h"
 #else
@@ -11,9 +11,7 @@
 #pragma comment (lib, "SDL/lib/SDL.lib")
 #pragma comment (lib, "SDL/SDL_GfxPrimitives/SDL_GfxPrimitives_Static.lib")
 
-// —— Enums —–
-
-enum color {BLACK, RED, GREEN, BLUE, CYAN, MAGENTA, YELLOW, WHITE, COLOR_MAX}; // Colors
+enum colour {BLACK, RED, GREEN, BLUE, CYAN, MAGENTA, YELLOW, WHITE, COLOR_MAX}; // Colors
 
 class IO
 {
@@ -21,7 +19,7 @@ class IO
 
         IO ();
 
-        void DrawRectangle (int pX1, int pY1, int pX2, int pY2, enum color pC);
+        void DrawRectangle (int pX1, int pY1, int pX2, int pY2, enum colour pC);
         void ClearScreen ();
         int GetScreenHeight ();
         int InitGraph ();
