@@ -1,0 +1,3 @@
+C:/VS Code/Tetris/build/CMakeFiles/Tetris.dir
+C:/VS Code/Tetris/build/CMakeFiles/ALL_BUILD.dir
+C:/VS Code/Tetris/build/CMakeFiles/ZERO_CHECK.dir
