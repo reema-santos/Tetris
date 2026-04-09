@@ -13,7 +13,7 @@ void Game::InitGame() {
     // time(NULL) returns current time. as time is constantly changing, 
     // a unique seed is produced each time
     // using the same seed makes things look random, but is the same each time
-    srand(time(NULL));
+    srand((unsigned int) time(NULL));
 
     mPiece = GetRand(0,6);
     mRotation = GetRand(0,3);

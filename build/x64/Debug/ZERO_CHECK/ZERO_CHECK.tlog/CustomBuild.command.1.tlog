@@ -1,0 +1,10 @@
+^C:\VS CODE\TETRIS\BUILD\CMAKEFILES\6218DC65E1B1F272E23F8E7158E23B58\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/VS Code/Tetris" "-BC:/VS Code/Tetris/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/VS Code/Tetris/build/Tetris.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
