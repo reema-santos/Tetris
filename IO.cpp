@@ -1,4 +1,4 @@
-#include "IO.h"
+#include "IO.hpp"
 
 static SDL_Surface* mScreen;
 static Uint32 mColours [COLOR_MAX] = {0x000000ff,					// Colors
