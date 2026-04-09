@@ -1,5 +1,5 @@
 
-#include "Pieces.h"
+#include "Pieces.hpp"
 
 // Pieces definition
 // 7 pieces, 4 ways to rotate each piece

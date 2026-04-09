@@ -16,8 +16,8 @@
 /*
 /*****************************************************************************************/
 
-#include "Game.h"
-#ifndef LINUX
+#include "Game.hpp"
+#ifndef WINDOWS
 #include <windows.h>
 #endif
 
@@ -26,7 +26,7 @@
 Main
 ==================
 */
-#ifndef LINUX
+#ifndef WINDOWS
 int WINAPI WinMain (HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)	// Linux users should quit this line
 #else
 int main()
